@@ -610,8 +610,8 @@ footer {
 
 
 .contenedor-imagenes img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     margin: 10px;
     opacity: 0;
