@@ -49,8 +49,6 @@ function animarContenedor() {
   const imagenes = contenedorImagenes.querySelectorAll('img');
   if (isContenedorVisible()) {
     imagenes.forEach(img => img.classList.add('animar'));
-  } else {
-    imagenes.forEach(img => img.classList.remove('animar'));
   }
 }
 
