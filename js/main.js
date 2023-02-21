@@ -29,3 +29,33 @@ document.querySelectorAll(".hamburguer")[0].addEventListener("click", function()
 
     enlacesHeader.classList.toggle("menudos")
 })
+
+
+
+// Obtener el contenedor de imágenes
+const contenedorImagenes = document.querySelector('.contenedor-imagenes');
+
+// Función para comprobar si el contenedor de imágenes es visible en la ventana actual
+function isContenedorVisible() {
+  const rect = contenedorImagenes.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+// Función para activar o desactivar la animación según si el contenedor es visible o no
+function animarContenedor() {
+  const imagenes = contenedorImagenes.querySelectorAll('img');
+  if (isContenedorVisible()) {
+    imagenes.forEach(img => img.classList.add('animar'));
+  } else {
+    imagenes.forEach(img => img.classList.remove('animar'));
+  }
+}
+
+// Activar la animación al cargar la página
+animarContenedor();
+
+// Activar la animación cuando se produce un evento de desplazamiento
+window.addEventListener('scroll', animarContenedor);
