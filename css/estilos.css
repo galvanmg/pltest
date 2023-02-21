@@ -617,7 +617,25 @@ footer {
   }
   
   .contenedor-imagenes img {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+    margin: 10px;
   }
+
+  .contenedor-imagenes img {
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
