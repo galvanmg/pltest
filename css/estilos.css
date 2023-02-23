@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1,
@@ -664,6 +664,7 @@ footer {
     color:#12122b;
     font-size: 0.915rem;
     line-height: 1;
+    background-color: #f5f5f5;
   }
 
   .social-media {
@@ -671,3 +672,5 @@ footer {
     align-items: center;
     margin-left: 18%;
   }
+
+  
