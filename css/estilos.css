@@ -404,7 +404,6 @@ footer {
 
 .social-media i {
     font-size: 20px;
-    display: inline-block;
     color: #adb6c7;
     border: 1px solid #adb6c7;
     border-radius: 50%;
@@ -665,4 +664,10 @@ footer {
     color:#12122b;
     font-size: 0.915rem;
     line-height: 1;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-left: 18%;
   }
