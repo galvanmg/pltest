@@ -119,6 +119,15 @@ nav {
     animation: ease-in animat 1s;
 }
 
+.imagen-nosotros {
+    align-items: center;
+}
+.imagen-nosotros>img {
+    width: 600px;
+    animation: ease-in animat 1s;
+    
+}
+
 @keyframes animat {
     0% {
         transform: scale(0);
@@ -425,7 +434,11 @@ footer {
 
 /* Breakpoints responsive */
 
+
+
 @media screen and (max-width:800px) {
+    
+    .textos-nosotros>img
     .titulo {
         font-size: 45px;
     }
@@ -436,8 +449,10 @@ footer {
         height: 720px;
     }
 
+
     .contenido-header>img {
         width: 400px;
+        
     }
 
     .textos-header {
@@ -511,9 +526,36 @@ footer {
         width: 40%;
         margin-bottom: 40px;
     }
+
+    .nosotros-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .nosotros-img {
+        margin-bottom: 25px;
+      }
+      
+      .nosotros-text {
+        font-size: 14px;
+        line-height: 1.5;
+      }
 }
 
+
 @media screen and (max-width:600px) {
+    
+    .nosotros-img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      
+      .nosotros-text {
+        font-size: 16px;
+        text-align: justify;
+      }
+    
     .titulo {
         font-size: 35px;
     }
@@ -646,6 +688,8 @@ footer {
     flex-wrap: wrap;
   }
 
+
+
   .textos-nosotros {
     max-width: 800px;
     margin: 0 auto;
@@ -665,7 +709,12 @@ footer {
     font-size: 0.915rem;
     line-height: 1;
     background-color: #f5f5f5;
+    margin: 0 0 0 30px;
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5D6678;
   }
+
 
   .social-media {
     display: flex;
