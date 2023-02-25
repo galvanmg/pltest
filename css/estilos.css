@@ -121,10 +121,16 @@ nav {
 
 .imagen-nosotros {
     align-items: center;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 .imagen-nosotros>img {
     width: 600px;
-    animation: ease-in animat 1s;
+   
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
     
 }
 
@@ -413,8 +419,10 @@ footer {
     width: 70%;
 }
 
+
 .social-media i {
     font-size: 20px;
+    display: inline-block;
     color: #adb6c7;
     border: 1px solid #adb6c7;
     border-radius: 50%;
@@ -433,6 +441,7 @@ footer {
     background-color: #1FDE82;
     border-color: #1FDE82;
 }
+
 
 /* Breakpoints responsive */
 
@@ -741,3 +750,42 @@ footer {
     border-radius: 50%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   }
+
+  .contenido-nosotros {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-nosotros>img {
+    width: 550px;
+    animation: ease-in animat 1s;
+}
+
+.contenido-nosotros p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5D6678;
+}
+
+.contenido-nosotros a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #1FDE82;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+
+  .textos-nosotros {
+    margin: 0 0 0 30px;
+}
