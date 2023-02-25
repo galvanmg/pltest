@@ -379,11 +379,13 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
+
 }
 
 .partFooter {
     width: 20%;
     text-align: center;
+    align-items: center;
 }
 
 .partFooter h4 {
@@ -722,4 +724,20 @@ footer {
     margin-left: 18%;
   }
 
+  .imagen-nosotros {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    text-align: center; /* Añade esta propiedad */
+  }
   
+  .img-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
