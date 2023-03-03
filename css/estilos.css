@@ -391,7 +391,7 @@ footer {
 .partFooter {
     width: 20%;
     text-align: center;
-    align-items: center;
+    
 }
 
 .partFooter h4 {
@@ -399,6 +399,7 @@ footer {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 30px;
+    
 }
 
 .partFooter a {
@@ -434,6 +435,7 @@ footer {
     text-align: center;
     transition: all ease-in-out .3s;
     margin-right: 5px;
+    
 }
 
 .social-media i:hover {
@@ -730,14 +732,6 @@ footer {
 }
 
 
-@media screen and (max-width: 395px) {
-    .textos-nosotros h1 {
-      font-size: 5px;
-    }
-  }
-
-
-
 
 .contenedor-imagenes img {
     width: 70px;
@@ -807,8 +801,8 @@ footer {
 
   .social-media {
     display: flex;
-    align-items: center;
-    margin-left: 18%;
+    justify-content: center;
+
   }
 
   .imagen-nosotros {
@@ -879,4 +873,12 @@ footer {
 
 
   
-  
+  @media screen and (max-width: 395px) {
+    .textos-nosotros p {
+        font-size: 12px;
+    }
+    .textos-nosotros h1 b {
+      font-size: 20px;
+    }
+
+  }
