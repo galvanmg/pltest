@@ -445,6 +445,75 @@ footer {
 
 /* Breakpoints responsive */
 
+@media screen and (max-width:1040) {
+
+    
+    /* Ajustar tamaño de fuente */
+    h1 {
+      font-size: 24px;
+    }
+  
+    /* Ajustar el ancho del contenedor principal */
+    .container {
+      width: 90%;
+    }
+  
+    /* Ajustar el tamaño de la imagen */
+    .imagen-nosotros img {
+      width: 50%;
+      height: auto;
+    }
+  
+    /* Ajustar el ancho de los elementos de la lista */
+    .nosotros-lista li {
+      width: 80%;
+    }
+  
+    /* Ajustar el ancho de los íconos */
+    .nosotros-lista li i {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+
+    /* Ajustar el ancho del contenedor principal */
+    .container {
+      max-width: 0%;
+    }
+  
+    /* Ajustar el tamaño de la imagen de la sección 'imagen-nosotros' */
+    .imagen-nosotros img {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  
+    /* Ajustar el tamaño de los iconos de la sección 'textos-servicios' */
+    .textos-servicios i {
+      font-size: 1.5rem;
+    }
+  
+    /* Ajustar el tamaño de los titulos */
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 1.5rem;
+    }
+  
+    /* Ajustar el tamaño del texto */
+    p {
+      font-size: 1rem;
+    }
+  
+    /* Ajustar el tamaño de los enlaces del footer */
+    footer a {
+      font-size: 0.8rem;
+    }
+  
+  }
+
+  
+    
+
 
 
 @media screen and (max-width:800px) {
@@ -557,15 +626,15 @@ footer {
 
 @media screen and (max-width:600px) {
     
-    .nosotros-img {
-        width: 100%;
-        margin-bottom: 20px;
+
+    
+    .imagen-nosotros {
+        display: none;
       }
+    
       
-      .nosotros-text {
-        font-size: 16px;
-        text-align: justify;
-      }
+  
+
     
     .titulo {
         font-size: 35px;
@@ -659,6 +728,15 @@ footer {
         margin-bottom: 40px;
     }
 }
+
+
+@media screen and (max-width: 395px) {
+    .textos-nosotros h1 {
+      font-size: 5px;
+    }
+  }
+
+
 
 
 .contenedor-imagenes img {
@@ -789,3 +867,16 @@ footer {
   .textos-nosotros {
     margin: 0 0 0 30px;
 }
+
+@media screen and (max-width: 1070px) {
+    .textos-nosotros h1 {
+      font-size: 30px;
+    }
+    .textos-nosotros p {
+        font-size: 13px;
+    }
+  }
+
+
+  
+  
